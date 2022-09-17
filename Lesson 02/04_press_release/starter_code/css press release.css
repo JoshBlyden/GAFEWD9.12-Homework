@@ -1,1 +1,39 @@
-body { }
+body { 
+    background-color:darkred;
+    padding:16px;
+}
+
+article {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding:16px;
+}
+
+h2 {
+    background-color: black;
+    color:white;
+}
+
+p {
+    color:red;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+ul {
+    float:center;
+    list-style-type: none;
+}
+li {
+    font-family: helvetica;
+    padding:8px;
+    display:inline;
+}
+
+a {
+    color:pink;
+    text-decoration: none;
+}
+
