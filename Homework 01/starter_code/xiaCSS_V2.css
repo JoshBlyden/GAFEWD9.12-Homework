@@ -66,10 +66,12 @@ p {
     line-height: 1.5; 
 } 
 
-
 li {
-    padding: 8px;  
-    display: inline;
+    padding: 8px;
+}
+
+li.navlist {
+    display: inline-block;
 }
 
 div {
