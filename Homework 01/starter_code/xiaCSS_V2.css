@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+img {
+    float:right;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+body {
+    color: #05080C;
+    margin: 16px;
+    padding: 32px;
+    background: F6F6F6;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: #222222;
+    border-width: 5px;
+    font-size: 18px;
+}
+
+h1 { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 32px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+
+h2 { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+
+h3 { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+
+h4 { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+
+p { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 1.5; 
+} 
+
+
+li {
+    padding: 8px;  
+    display: inline;
+}
+
+div {
+    color:rgb(0,0,0,);
+    border-bottom-style: solid;
+    border-color: rgba(0,0,0,0.1);
+    padding-bottom: 0px;
+    padding-top: 16px;
+}
+
+th {
+    background-color: #222222;
+    color: white;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+td{
+    padding: 8px;
+    background: #eeeeee;
+}
+
+nav {
+    padding-top: 8px;
+}
+
+.roundbutton {
+    border-radius:16px;
+}
+
+/* LINKS */
+ /* unvisited link */
+ a {
+    color:blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+ }
+ a:link {
+    color:blue;
+    text-decoration: underlined;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* hover */
+ a:hover {
+    color:green;
+    text-decoration: none;  
+ }
+
+/* visited link */
+a:visited {color: none;}
+
+/* LINKS- nav */
+    /* unvisited link */
+    a.nav {
+        color:blue
+    }
+
+    a.nav:link {
+        color:blue;
+        text-decoration: none;
+        border-style: solid;
+        border-color: blue;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    
+    /* hover */
+     a.nav:hover {
+        color:white;
+        text-decoration: none;
+        background-color:rgb(22, 4, 139);
+     }
+
+    /* visited link */
+    a.nav:visited {color: none;}
+    
+
+
+    .leftindent {
+        margin-left: 16px;
+        }
+
+    .leftindentmore {
+        margin-left: 32px;
+    }
+
+    .bottomspace {
+        margin-bottom: 32px;
+    }
+
+    

@@ -30,8 +30,8 @@ DONE- Put 5px solid borders at the top and bottom of the page and use the color 
 
 ###Technical Requirements
 
-- Link the navigation to the sections of the page using the 'a' tag and id's
-- Use a unique `title` and unique `h1` tags
+- DONE Link the navigation to the sections of the page using the 'a' tag and id's
+- DONE Use a unique `title` and unique `h1` tags
 - DONE Show image using `img` tag including unique `alt` attribute
 - DONE Use an external CSS stylesheet to style your pages
 - DONE Select at least 5 elements on the page and apply at least 5 different css properties (`font-size`, `color`, `font-family`, `font-weight`, `text-decoration`) to these elements
