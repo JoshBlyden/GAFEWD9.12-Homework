@@ -34,6 +34,11 @@ a {
   font-size: 26px;
 }
 
+.relaxr-corestyles img {
+  border: 3px solid #131e27;
+  width: 474px;
+}
+
 .relaxr-corestyles p.featuredText {
   font-style:italic;
   font-size: 30px;
@@ -58,6 +63,7 @@ a {
 
 .relaxr-corestyles h1 {
   font-size: 40px;
+
 }
 
 .relaxr-corestyles h2 {
@@ -124,4 +130,30 @@ a {
   font-weight: 600;
 }
 
+.featureBox {
+  width: 440px;
+  padding: 20px;
+  background: rgb(243, 224, 51);
+}
 
+.featureBox h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.featureBox ul,
+.featureBox ol {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.featureBox strong {
+  background-color:#eaeaea;
+  color: black;
+  border: 1px solid rgb(180,180,180);
+  padding:4px;
+}
+
+.featureBox > *:first-child {
+  margin-top: 0;
+}
