@@ -55,10 +55,12 @@ a {
   font-style: normal;
 }
 
-.relaxr-corestyles h1, .relaxr-corestyles h2, .relaxr-corestyles h3, .relaxr-corestyles h4, .relaxr-corestyles h5,.relaxr-corestyles h6 {
+.relaxr-corestyles h1, .relaxr-corestyles h2, 
+.relaxr-corestyles h3, .relaxr-corestyles h4, 
+.relaxr-corestyles h5, .relaxr-corestyles h6 {
   color: #033048;
-  font-weight: 600;
-  margin-top: 16px;
+  font-weight: 600px;
+  margin-top: 32px;
 }
 
 .relaxr-corestyles h1 {
