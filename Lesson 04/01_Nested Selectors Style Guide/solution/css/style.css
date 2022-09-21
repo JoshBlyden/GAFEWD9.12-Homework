@@ -31,17 +31,28 @@ a {
 
 /* Core Styles */
 .relaxr-corestyles p {
-  font-weight: normal;
+  font-size: 26px;
 }
 
-.relaxr-corestyles h1, 
-.relaxr-corestyles h2,
-.relaxr-corestyles h3,
-.relaxr-corestyles h4,
-.relaxr-corestyles h5,
-.relaxr-corestyles h6 {
+.relaxr-corestyles p.featuredText {
+  font-style:italic;
+  font-size: 30px;
+}
+.relaxr-corestyles strong {
+  font-weight:bold;
+}
+
+.relaxr-corestyles em {
+  font-style:italic;
+}
+
+.relaxr-corestyles p.featuredText em {
+  font-style: normal;
+}
+
+.relaxr-corestyles h1, .relaxr-corestyles h2, .relaxr-corestyles h3, .relaxr-corestyles h4, .relaxr-corestyles h5,.relaxr-corestyles h6 {
   color: #033048;
-  font-weight: 1000px;
+  font-weight: 600;
   margin-top: 16px;
 }
 
@@ -55,62 +66,49 @@ a {
 
 .relaxr-corestyles h3 {
   font-size: 26px;
+  text-transform: uppercase;
 }
 
 .relaxr-corestyles h4 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .relaxr-corestyles h5 {
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .relaxr-corestyles h6 {
   font-size: 16px;
+  text-transform: uppercase;
 }
 
-.relaxr-corestyles p {
-  font-size: 26px;
-}
-
-.relaxr-corestyles em {
-  font-style: italic;
-}
-
-.relaxr-corestyles p.featuredText {
-  font-size: 30px;
-  font-style: italic;
-}
-
-.relaxr-corestyles p.featuredText em {
-  font-style: normal;
-}
-
-.relaxr-corestyles strong {
-  font-weight: bold;
-}
-
-.relaxr-corestyles ul, 
-.relaxr-corestyles ol {
+.relaxr-corestyles ul, .relaxr-corestyles ol {
   margin: 30px 0 30px 80px;
 }
 
-.relaxr-corestyles ol ol, 
-.relaxr-corestyles ul ul {
-  margin: 12px 0 12px 40px
+.relaxr-corestyles ul ul, .relaxr-corestyles ol ol {
+  margin: 12px 0 12px 40px;
+}
+
+.relaxr-corestyles li {
+  margin-bottom: 8px;
 }
 
 .relaxr-corestyles ul {
-  list-style-type: disc;
-}
-
-.relaxr-corestyles ol {
-  list-style-type: decimal;
+  list-style: disc;
 }
 
 .relaxr-corestyles > ol > li > ol {
-  list-style-type: upper-roman;
+  list-style: upper-roman;
 }
+
+.relaxr-corestyles ol {
+  list-style: decimal;
+}
+
+
 
 
 /* Footer */
