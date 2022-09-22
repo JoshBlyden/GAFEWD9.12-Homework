@@ -4,13 +4,16 @@
 }
 
 .exerciseMain {
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .exerciseMainContent {
-
+    flex-grow: 2;
+    margin-right: 8px;
 }
 
 .exerciseMainAside {
-
-}
+    flex-grow: 1;
+}                                     
