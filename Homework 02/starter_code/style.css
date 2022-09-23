@@ -31,7 +31,7 @@ header {
   border-bottom-width: 4px;
   border-bottom-style: solid;
   background-color: black;
- align-items: center;
+  align-items: center;
  justify-content: space-between;
 }
 
@@ -53,11 +53,7 @@ nav {
   border-bottom: 2px solid #878787;
 }
 
-.btnbold {
-  background-color: yellow;
-  border-bottom-color: #ffd900;
-  border-radius: 4px; 
-}
+
 
 em {
   text-decoration: underline;
@@ -69,16 +65,16 @@ em {
   text-transform: uppercase;
 }
 
-.hw2upbar p {
-  color: black;
-  font-style: italic;
-  justify-content: flex-end;
-  font-size: 24px;
-}
-
 .hw2upbar {
   justify-content: center;
   background-color: #adadad; 
+  align-items: center;
+}
+
+.hw2upbar p {
+  color: black;
+  font-style: italic;
+  font-size: 24px;
 }
 
 .testingthis {
@@ -87,15 +83,29 @@ em {
   min-height: 600px;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .boxinabox {
-  color: blue;
+  color: black;
   display: block;
-  max-width: 300px;
+  max-width: 400px;
+  max-height: 200px;
   align-items: center;
+  padding: 48px 32px 32px 32px;
   margin: 128px 64px 0 0;
+  background-color: lightgrey;
+  opacity: 75%;
+}
+
+.boxinabox p, .boxinabox a, .boxinabox h1 {
+  opacity: 100%
+}
+
+.btnbold {
+  background-color: yellow;
+  border-bottom-color: #ffd900;
+  border-radius: 4px; 
+  opacity: 100%;
 }
 
 .topnavrightside {
@@ -140,11 +150,6 @@ ul {
   text-transform: uppercase;
   background-color: #adadad;
   padding: 8px 16px 8px 16px;
-}
-
-.hw2bottomctas p {
-
-
 }
 
 
