@@ -77,15 +77,25 @@ em {
 }
 
 .hw2upbar {
-  display: flex;
   justify-content: center;
   background-color: #adadad; 
 }
 
 .testingthis {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
-  color: red;
+  margin: 0;
+  min-height: 600px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.boxinabox {
+  color: blue;
+  display: block;
   max-width: 300px;
+  align-items: center;
+  margin: 128px 64px 0 0;
 }
 
 .topnavrightside {
