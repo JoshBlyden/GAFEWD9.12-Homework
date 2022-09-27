@@ -16,26 +16,35 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 }
 
 .exerciseHeader {
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
 
 }
 
 .exerciseHeaderLogo {
     width: 200px;
     height: 80px;
+    margin: 0;
 }
 
 
 .exerciseHeaderNav {
-
+margin-left: 10px;
 }
 
 .exerciseHeaderNav ul {
-
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+flex-wrap: wrap;
+margin: 0;
 }
 
 .exerciseHeaderNav ul li {
-
+    list-style-type: none;
+    justify-content: space-between;
+    min-width: 200px;
 
 }
 
@@ -46,7 +55,10 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 
 
 .exerciseAdditionalFeatures {
-
+display: grid;
+gap: 10px;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 10px 0 10px 0;
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature {

@@ -4,8 +4,10 @@
 }
 
 .exerciseMainFeatures {
-
-
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin-bottom: 10px;
 }
 
 .exerciseMainFeatures .exerciseMarketingFeature {
@@ -18,7 +20,10 @@
 }
 
 .exerciseAdditionalFeatures {
-
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+margin-bottom: 10px;
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature {
