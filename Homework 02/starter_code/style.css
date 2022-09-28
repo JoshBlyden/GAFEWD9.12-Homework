@@ -25,6 +25,9 @@ p {
 /* Background Image */
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
 
+
+/* Header */
+
 header {
   display: flex;
   border-bottom-color: #f2ff00;
@@ -35,37 +38,54 @@ header {
  justify-content: space-between;
 }
 
-header h1 {
+a.logoheaderbtn {
   color: #f2ff00;
   margin: 24px;
+  font-family: 'merriweather', serif;
+  text-decoration: none;
+  font-size: 40px;
 }
 
 nav {
   margin: 24px;
 }
 
-.btn {
-  display: block;
-  background-color: grey;
-  text-align: center;
-  font-size: 24px;
-  border-radius: 4px; 
-  border-bottom: 2px solid #878787;
+.topnavrightside {
+  display: flex;
+  justify-content: space-between;
 }
-
-
-
-em {
-  text-decoration: underline;
-  text-decoration-color: #f2ff00;
-}
-
 
 .capsNav {
   text-transform: uppercase;
+  font-size: 24px;
+  font-family:'Oswald', sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
+.regNav {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+a.regNav:hover, a.capsNav:hover {
+  color:#f2ff00;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Greybar/ subheader */
+
 .hw2upbar {
+  display:flex;
   justify-content: center;
   background-color: #adadad; 
   align-items: center;
@@ -74,67 +94,110 @@ em {
 .hw2upbar p {
   color: black;
   font-style: italic;
-  font-size: 24px;
+  font-size: 28px;
+  font-family: 'Lato', sans-serif;
 }
 
-.testingthis {
+
+/* Mid/lower page */
+
+em {
+  text-decoration: underline;
+  text-decoration-color: #f2ff00;
+}
+
+
+
+.mainctaarea {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
-  margin: 0;
-  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  min-height: 60%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .boxinabox {
   color: black;
   display: block;
   max-width: 400px;
-  max-height: 200px;
+  max-height: 240px;
   align-items: center;
-  padding: 48px 32px 32px 32px;
-  margin: 128px 64px 0 0;
-  background-color: lightgrey;
-  opacity: 75%;
+  padding: 48px;
+  margin: 64px;
+  background-color: rgba(211, 211, 211, 0.9);
+  border-radius: 4px;
+  box-shadow: 2px 2px rgba(8, 8, 8, 0.25)
+}
+
+.boxinabox p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.boxinabox h1 {
+  font-family: 'Lato', sans-serif;
 }
 
 .boxinabox p, .boxinabox a, .boxinabox h1 {
   opacity: 100%
 }
 
+
+.btn {
+  display: block;
+  background-color: grey;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 4px; 
+  border-bottom: 2px solid #878787;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #adadad;
+  padding: 8px 16px 8px 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
 .btnbold {
   background-color: yellow;
   border-bottom-color: #ffd900;
   border-radius: 4px; 
-  opacity: 100%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  color: black;
 }
 
-.topnavrightside {
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-}
 
 /* Bottom Bar */
 
-
 .hw2bottomctas {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: lightgrey;
 }
 
 .hw2bottomsquares {
-  margin: 24px;
+  margin:24px;
+}
+
+#midbox {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color:rgba(8, 8, 8, 0.25);
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+
+}
+
+.hw2bottomsquares p {
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -142,16 +205,6 @@ ul {
   font-size: 24px;
   font-family: 'Merriweather', serif;
 }
-
-.hw2bottomctas a {
-  color: black;
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #adadad;
-  padding: 8px 16px 8px 16px;
-}
-
 
 /* Footer */
 
@@ -163,4 +216,5 @@ footer p {
   color: white;
   margin-left: 16px;
   padding: 8px;
+  font-family: 'Lato', sans-serif;
 }

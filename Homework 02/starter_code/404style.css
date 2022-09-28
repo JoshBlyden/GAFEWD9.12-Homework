@@ -1,0 +1,23 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p {
+    font-size: 24px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 32px;
+}
+
+.wormcity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
