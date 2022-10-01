@@ -86,7 +86,8 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     align-items: baseline;
     gap: 16px;
     margin-left: 24px;
-    height: 68px;
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 .available-homes div {
@@ -122,6 +123,27 @@ House pics:
 10. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg
 11. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg
 12. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg */
+
+.bannernew {
+    background-color: rgba(32,192,99,0.8);
+    color: white;
+    width: 40px;
+    padding-left: 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.bannerforsale {
+    background-color: rgba(132, 136, 134, 0.8);
+    color: white;
+    width: 96px;
+    padding-left: 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
 
 .housephoto1 {
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
