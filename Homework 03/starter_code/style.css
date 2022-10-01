@@ -11,15 +11,14 @@ Dark Text: #3b4144 / RGBA (59,65,68,1) */
 }
 
 .greenheader {
-    background: #20c063;
+    background: #32b64c;
 }
 
 ul.topnavleft, ul.topnavright, ul.topnavJ {
     list-style-type: none;
     color: white;
     margin-bottom: 0;
-    padding-bottom: 4px;
-    margin-top: 4px;
+    margin-top: 0px;
     align-items: center;
 }
 
@@ -29,6 +28,9 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     margin-left: 16px;
     margin-right: 16px;
     align-items: center;
+    font-family: 'source Sans Pro', sans-serif;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .maintopnav a {
@@ -38,7 +40,7 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 
 .topnavleft {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
 }
 
@@ -46,12 +48,16 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin-right: 24px;
+    padding-right: 0;
     align-items: center;
 }
 
 .topnavJ {
     display: flex;
     gap: 4px;
+    margin-left: ;
+    padding-left: 0;
 }
 
 .trulialogo {
@@ -65,10 +71,35 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     border-radius: 100px;
     padding: 6px;
 }
+
+.rightside {
+    display: flex;
+}
+
 /* Sub Header */
 
+.available-homes {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-left: 24px;
+    height: 68px;
+}
 
+.available-homes div {
+    align-items: baseline;
+}
 
+.available-homes h1 {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.available-homes p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 
 /* Main Grid */
@@ -97,8 +128,6 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     gap: 4px;
 }
 
-.houseaddress{
-}
 
 .homeicon, .arrowicon {
     width: 16px;
@@ -117,19 +146,119 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
-   
+    font-family: 'source sans pro', sans-serif;
+}
+
+.housecardbottom address {
+    color: #787d81;
+    font-size: 14px;
+    font-style: normal;
 }
 
 .housecardbottom p {
     margin: 0;
+    font-size: 16px;
+}
+
+.housecardbottom h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
-/* Bottom Nav */
 
 
-
-/* Under Grid Body*/
 
 
 /* Footer*/
+
+footer {
+    font-family: 'source sans pro', sans-serif;
+}
+
+.zipcodedescrip {
+    margin: 48px 88px 48px 24px;
+}
+
+footer a {
+    color: #2b883d;
+    text-decoration: none;
+    font-family: 'source sans pro', sans-serif;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+footer li, footer p {
+    font-family: 'source sans pro', sans-serif;
+    font-size: 14px;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+.pagenumbers {
+    display: flex;
+    gap: 24px;
+}
+
+.pageresults p {
+    margin: 8px;
+    padding: 0;
+    color: #787d81;
+    font-size: 16px;
+    font-family: 'source sans pro' sans-serif;
+}
+
+.bottomNav {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomNav em {
+    font-style: normal;
+    font-weight: bold;
+    color:#227032;
+    font-size: 16px;
+}
+
+.greyfooternav {
+    background:#717577;
+    margin-top: 32px;
+}
+
+.greyfooternav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.greyfooternav a {
+    color: white;
+    font-size: 16px;
+}
+
+.greyfooternav li {
+    color: white;
+}
+
+.copyright {
+   display: flex;
+   justify-content: center;
+}
+
+.copyright p {
+    font-size: 10px;
+    color: white;
+}
