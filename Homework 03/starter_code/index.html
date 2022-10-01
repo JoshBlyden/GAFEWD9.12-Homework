@@ -1,111 +1,341 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Homework 3 - Starter Code</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Homework 3 - Trulia Sample Site</title>
+  <link rel="stylesheet" href="./normalize.css"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Font: Lato 400 regular-->
+  <link rel="stylesheet" href="https://fonts.google.com/?category=Sans+Serif&selection.family=Lato"/>
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-## Reference content
 
-### Font
-Lato 400 Regular
-https://fonts.google.com/?category=Sans+Serif&selection.family=Lato
+<header class="greenheader">
+  <nav class="maintopnav">
+    <section class="logoandnavleft">
+      <img src="images/logo.svg" class="trulialogo"/>
+      <ul class="topnavleft">
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Rent</a></li> 
+        <li><a href="#">Mortgage</a></li>
+        <li><a href="#">Local</a></li>
+        <li><a href="#">Scoop</a></li>
+      </ul>
+    </section>
 
-### Navigation:
-Buy Rent Mortgage Local Scoop
-Saved Homes Saved Searches jsir
+    <section class="rightside">
+      <ul class="topnavright">
+        <li><a href="#">Saved Homes</a></li>
+        <li><a href="#">Saved Searches</a></li>
+        <li>  
+          <ul class="topnavJ">
+              <li><a href="#"><span>J</span></a></li>
+              <li><a href="#">jsir</a></li>
+            </ul>
+          </li>
+      </ul>
+    </section>
+  </nav>
+</header>
 
-### Houses:
+<main>
 
-$475,000
-2bd
-2ba
-715 sqft
-3205 Georgia Ave NW #403
-Pleasant Plains, Washington, DC
+  <section class="mainhousegrid">
 
-$774,900
-2bd
-3ba
-3615 10th St NW #8
-Columbia Heights, Washington, DC
+     <!--1-->
+    <article>
+      <img src=""/>
+      <div class="housecardbottom">
+          <div class="houseprice">
+            <p>$475,000</p>
+            <img src="images/up-sign.svg" class="arrowicon"/>
+          </div>
+          <div class="housespecsrow">
+            <div class="housespec">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+              <p>2 bd</p>
+            </div>
+            <div class="housespec">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+              <p>2 ba</p>
+            </div>
+            <p>715 sqft</p>
+          </div>
+          <div class="houseaddress">
+            <p>3205 Georgia Ave NW #403<br>Pleasant Plains, Washington, DC</p>
+          </div>
+      </div>
+    </article>
 
-$600,000
-3 bd
-2 ba
-3120 Park Pl NW
-Pleasant Plains, Washington, DC
+     <!--2-->
+     <article>
+      <img src=""/>
+      <div class="housecardbottom">
+          <div class="houseprice">
+            <p>$774,900</p>
+          </div>
+          <div class="housespecsrow">
+            <div class="housespec">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+              <p>2 bd</p>
+            </div>
+            <div class="housespec">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+              <p>3 ba</p>
+            </div>
+            <p>1200 sqft</p>
+          </div>
+          <div class="houseaddress">
+            <p>3615 10th St NW #8<br>Columbia Heights, Washington, DC</p>
+          </div>
+      </div>
+    </article>
 
-$630,000
-2bd
-3ba
-1500 sq ft
-3221 Warder St NW #1
-Pleasant Plains, Washington, DC
+<!--3-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$600,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>3 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>2 ba</p>
+        </div>
+        <p>715 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>3120 Park Pl NW<br>Pleasant Plains, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$1,295,000
-9bd
-6ba
-705 Kenyon St NW
-Pleasant Plains, Washington, DC
+<!--4-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$630,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>2 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>3 ba</p>
+        </div>
+        <p>1500 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>3221 Warder St NW #1<br>Pleasant Plains, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$1,049,000
-6bd
-4ba
-2688 sqft
-1363 Oak St NW
-Columbia Heights, Washington, DC
+<!--5-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$1,295,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>9 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>6 ba</p>
+        </div>
+        <p>715 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>705 Kenyon St NW<br>Pleasant Plains, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$720,000
-3bd
-3ba
-1850 sqft
-1307 Irving St NW #1
-Columbia Heights, Washington, DC
+<!--6-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$1,049,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>6 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>4 ba</p>
+        </div>
+        <p>2688 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>1363 Oak St NW<br>Columbia Heights, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$760,000
-3bd
-3ba
-1920 sqft
-752 Park Rd NW
-Columbia Heights, Washington, DC
+<!--7-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$720,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>3 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>3 ba</p>
+        </div>
+        <p>1850 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>1307 Irving St NW #1<br>Columbia Heights, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$760,000
-3bd
-3ba
-1920 sqft
-752 Park Rd NW
-Columbia Heights, Washington, DC
+<!--8-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$760,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>3 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>3 ba</p>
+        </div>
+        <p>1920 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>752 Park Rd NW<br>Columbia Heights, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$999,000
-2bd
-4ba
-2395 sqft
-3511 17th ST NW #7
-Mount Pleasant, Washington, DC
+<!--9-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$760,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>3 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>3 ba</p>
+        </div>
+        <p>1920 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>752 Park Rd NW<br>Columbia Heights, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$474,500
-2bd
-1ba
-964 sqft
-1356 Kenyon St NW #8
-Columbia Heights, Washington, DC
+<!--10-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$999,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>2 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>4 ba</p>
+        </div>
+        <p>2395 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>3511 17th ST NW #7<br>Mount Pleasant, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-$399,000
-1bd
-1ba
-462 sqft
-3205 Georgia Ave NW, #505
-Pleasant Plains, Washington, DC
+<!--11-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$474,500</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>2 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>1 ba</p>
+        </div>
+        <p>964 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>1356 Kenyon St NW #8<br>Columbia Heights, Washington, DC</p>
+      </div>
+  </div>
+</article>
 
-### Images: 
+<!--12-->
+<article>
+  <img src=""/>
+  <div class="housecardbottom">
+      <div class="houseprice">
+        <p>$399,000</p>
+      </div>
+      <div class="housespecsrow">
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" class="homeicon"/>
+          <p>1 bd</p>
+        </div>
+        <div class="housespec">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" class="homeicon"/>
+          <p>1 ba</p>
+        </div>
+        <p>462 sqft</p>
+      </div>
+      <div class="houseaddress">
+        <p>3205 Georgia Ave NW, #505<br>Pleasant Plains, Washington, DC</p>
+      </div>
+  </div>
+</article>
+</section>
 
-Logo:
-in the images/ folder
-
+<!--
 House pics:
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg
@@ -123,9 +353,9 @@ https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg
 Icons
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png
+-->
 
-Arrows:
-In images folder
+
 
 ### Footer:
 
@@ -163,10 +393,13 @@ HTML Skeleton to get you going:
               <address class="trulia-house-address"><br/></address>
           </li>
       </ul>
-  </article>
+    </article>
   
   </main>
 <!-- partial -->
   
 </body>
+
+<footer>
+</footer>
 </html>
