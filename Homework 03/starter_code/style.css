@@ -73,6 +73,12 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 
 /* Main Grid */
 
+.fullhousecard {
+    margin: 16px;
+    background-color: white;
+    border-radius: 8px;
+}
+
 .houseprice, .housespecsrow, .houseaddress {
     margin: 2px 4px 2px 4px;
 }
@@ -102,7 +108,8 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 .mainhousegrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 16px;
+    margin-bottom: 16px;
+    background: #e8e9ea;
 }
 
 
