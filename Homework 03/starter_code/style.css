@@ -29,8 +29,8 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     margin-right: 16px;
     align-items: center;
     font-family: 'source Sans Pro', sans-serif;
-    padding: 10px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 14px;
 }
 
 .maintopnav a {
@@ -55,8 +55,7 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 
 .topnavJ {
     display: flex;
-    gap: 4px;
-    margin-left: ;
+    gap: 0px;
     padding-left: 0;
 }
 
@@ -64,12 +63,16 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     width: 75px;
 }
 
-.topnavJ span {
-    border-radius: 1px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 100px;
-    padding: 6px;
+.circleborder {
+    border: 2px solid white;
+    border-radius: 22px;
+    display: inline-block;
+    height: 20px;
+    padding-top: 2px;
+    margin: 0px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 22px;
 }
 
 .rightside {
@@ -91,21 +94,96 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 }
 
 .available-homes h1 {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 0;
     padding-bottom: 0;
+    font-family: 'source sans pro', sans-serif;
 }
 
 .available-homes p {
     margin-bottom: 0;
     padding-bottom: 0;
+    font-family: 'source sans pro', sans-serif;
+    font-size: 14px;
 }
 
+
+/* Photos 
+House pics:
+01. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg
+02. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg
+03. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg
+04. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg
+05. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg
+06. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg
+07. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg
+08. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg
+09. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg
+10. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg
+11. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg
+12. https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg */
+
+.housephoto1 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+}
+
+.housephoto2 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+}
+
+.housephoto3 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+}
+
+.housephoto4 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+}
+
+.housephoto5 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+}
+
+.housephoto6 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+}
+
+.housephoto7 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+}
+
+.housephoto8 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+}
+
+.housephoto9 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+}
+
+.housephoto10 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+}
+
+.housephoto11 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+}
+
+.housephoto12 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+}
+.houseimages {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
 
 /* Main Grid */
 
 .fullhousecard {
-    margin: 16px;
+    margin: 16px 8px 16px 8px;
     background-color: white;
     border-radius: 8px;
 }
@@ -128,7 +206,6 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     gap: 4px;
 }
 
-
 .homeicon, .arrowicon {
     width: 16px;
     height: 16px;
@@ -141,11 +218,10 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
     background: #e8e9ea;
 }
 
-
 .housecardbottom {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+    margin: 8px 0 16px 8px;
     font-family: 'source sans pro', sans-serif;
 }
 
@@ -167,8 +243,13 @@ ul.topnavleft, ul.topnavright, ul.topnavJ {
 }
 
 
+.leftcardedits {
+    margin-left: 16px;
+}
 
-
+.rightcardedits {
+    margin-right: 16px;
+}
 
 
 /* Footer*/
@@ -229,11 +310,11 @@ footer h1 {
     font-style: normal;
     font-weight: bold;
     color:#227032;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .greyfooternav {
-    background:#717577;
+    background:#474E52;
     margin-top: 32px;
 }
 
@@ -260,5 +341,5 @@ footer h1 {
 
 .copyright p {
     font-size: 10px;
-    color: white;
+    color: lightgrey;
 }
