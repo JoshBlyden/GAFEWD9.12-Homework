@@ -9,7 +9,7 @@ body {
     font-family: 'source sans pro', sans-serif;
 }
 
-header, main, footer, .submain {
+header, main {
     margin: 0 16px 0 16px;
     padding-right: 0;
     padding-top: 16px;
@@ -20,85 +20,38 @@ header, main {
     border-bottom-style: solid;
 }
 
-.submain {
-    border-bottom-color: rgb(255, 255, 255);
-    border-bottom-style: solid; 
-}
-header h1 {
-    font-size:14px;
-    text-transform: uppercase;
-}
-
-em {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-style: normal;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-header p {
-    font-size: 14px;
-}
-
-.closebutton {
-    font-size: 20px;
-    align-items: right;
-    justify-content: right;
-}
-
-.closebox {
-    text-align: right;
-    
-}
-
-.howtoplay {
-    text-align: center;
-}
-
-.headermain {
-    display: grid;
-    grid-template-columns: 19fr 1fr;
-    align-items: center;
-}
 
 /* Main */
 
-main h1{
-    Text-transform: capitalize; 
-    font-size: 16px;
-}
-
-main, .submain, footer {
-    font-size: 14px;
-}
 
 main {
     padding-top: 0;
     padding-bottom: 4px;
-}
-
-.submain {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 16px;
-    padding-right: 0;
-    margin-top: 0px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.bold {
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Tiles */
 
-ul {
-    list-style-type: none;
+.playtiles {
+    display: grid;
+    grid-template-columns: repeat(5, 38px);
+    gap: 2px;
+}
+
+.playtiles {
+    margin: 0;
+    padding: 0;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .tile {
@@ -108,6 +61,7 @@ border-width: 1px;
 border-color: rgb(97,97,97);
 padding: 2px;
 width: 30px;
+height: 30px;
 justify-content: center;
 align-items: center;
 font-size: 24px;
@@ -115,24 +69,55 @@ font-weight: bold;
 text-align: center;
 }
 
-.greentile {
-    background:rgb(39, 112, 39);
+
+.keys {
+    text-transform: uppercase;
+    border-width: 1px;
+    border-color: rgb(97,97,97);
+    padding: 2px;
+    width: 16px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-radius: 4px;
+    margin: 0;
 }
 
-.yellowtile {
-    background: rgb(171, 171, 13);
+.widekey {
+    text-transform: uppercase;
+    border-width: 1px;
+    border-color: rgb(97,97,97);
+    padding: 2px;
+    width: 32px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
 }
 
-.nospottile {
-    border-style: none;
-    background: rgb(97, 97, 97);
+.toprowkeys {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
 }
 
-.examplewords {
-    display: flex;
-    gap: 4px;
-    margin-left: 0;
-    padding-left: 0;
+.midrowkeys {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1px;
+}
+
+.btmrowkeys {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1px;
 }
 
 .backdrop {
@@ -142,41 +127,6 @@ text-align: center;
     padding-top: 0;
 }
 
-.logoimg img {
-    width: 48px;
-    height: 48px;
-}
-
-.rightarrow img {
-    width: 48px;
-    height: 48px;
-}
-
-.footerleft {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.footerright {
-    margin-left: 8px;
-    padding-left: 8px;
-    margin-right: 0px;
-    padding-right: 0;
-}
-
-footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-h1 {
-    text-align: center;
+ul {
+    list-style-type: none;
 }
