@@ -11,7 +11,7 @@ body {
 
 header, main, footer, .submain {
     margin: 0 16px 0 16px;
-    padding-right: 16px;
+    padding-right: 0;
     padding-top: 16px;
 }
 
@@ -44,21 +44,27 @@ header p {
     font-size: 14px;
 }
 
-.howtoplay {justify-content: center;
-   
-}
-
-.headermain {
-}
-
 .closebutton {
     font-size: 24px;
+    align-items: right;
+    justify-content: right;
 }
 
 .closebox {
-    text-align: right;
-    display: flex;
     justify-content: flex-end;
+    
+}
+
+.howtoplay {
+    display: flex;
+    background:yellow;
+}
+
+.headermain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
 }
 
 /* Main */
@@ -81,7 +87,7 @@ main {
     margin-left: 0;
     margin-right: 0;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 0;
     margin-top: 0px;
     padding-top: 4px;
     padding-bottom: 4px;
