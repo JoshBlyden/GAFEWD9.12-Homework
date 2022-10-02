@@ -45,26 +45,24 @@ header p {
 }
 
 .closebutton {
-    font-size: 24px;
+    font-size: 20px;
     align-items: right;
     justify-content: right;
 }
 
 .closebox {
-    justify-content: flex-end;
+    text-align: right;
     
 }
 
 .howtoplay {
-    display: flex;
-    background:yellow;
+    text-align: center;
 }
 
 .headermain {
-    display: flex;
+    display: grid;
+    grid-template-columns: 19fr 1fr;
     align-items: center;
-    justify-content: center;
-    background: red;
 }
 
 /* Main */
