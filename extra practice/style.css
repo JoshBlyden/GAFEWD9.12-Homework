@@ -1,0 +1,167 @@
+
+/* Header */
+
+body {
+    width: 375px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    font-family: 'source sans pro', sans-serif;
+}
+
+header, main, footer, .submain {
+    margin: 0 16px 0 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+}
+
+header, main {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    border-bottom-style: solid;
+}
+
+.submain {
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid; 
+}
+header h1 {
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+em {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header p {
+    font-size: 14px;
+}
+
+.howtoplay {justify-content: center;
+   
+}
+
+.headermain {
+}
+
+.closebutton {
+    font-size: 24px;
+}
+
+.closebox {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main */
+
+main h1{
+    Text-transform: capitalize; 
+    font-size: 16px;
+}
+
+main, .submain, footer {
+    font-size: 14px;
+}
+
+main {
+    padding-top: 0;
+    padding-bottom: 4px;
+}
+
+.submain {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Tiles */
+
+ul {
+    list-style-type: none;
+}
+
+.tile {
+text-transform: uppercase;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(97,97,97);
+padding: 2px;
+width: 30px;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+text-align: center;
+}
+
+.greentile {
+    background:rgb(39, 112, 39);
+}
+
+.yellowtile {
+    background: rgb(171, 171, 13);
+}
+
+.nospottile {
+    border-style: none;
+    background: rgb(97, 97, 97);
+}
+
+.examplewords {
+    display: flex;
+    gap: 4px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.backdrop {
+    background-color: rgb(16,16,16);
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.logoimg img {
+    width: 48px;
+    height: 48px;
+}
+
+.rightarrow img {
+    width: 48px;
+    height: 48px;
+}
+
+.footerleft {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footerright {
+    margin-left: 8px;
+    padding-left: 8px;
+    margin-right: 0px;
+    padding-right: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
