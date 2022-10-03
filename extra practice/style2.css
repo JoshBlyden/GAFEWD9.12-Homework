@@ -9,11 +9,6 @@ body {
     font-family: 'source sans pro', sans-serif;
 }
 
-header, main {
-    margin: 0 16px 0 16px;
-    padding-right: 0;
-    padding-top: 16px;
-}
 
 header, main {
     border-bottom-color: rgba(255, 255, 255, 0.25);
@@ -24,14 +19,6 @@ header, main {
 /* Main */
 
 
-main {
-    padding-top: 0;
-    padding-bottom: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Tiles */
 
@@ -47,11 +34,10 @@ main {
 }
 
 .keyboard {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+  background: red;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .tile {
@@ -87,37 +73,49 @@ text-align: center;
     margin: 0;
 }
 
-.widekey {
-    text-transform: uppercase;
+.widekeyL {
+    grid-column: 1/ span 2;
     border-width: 1px;
     border-color: rgb(97,97,97);
     padding: 2px;
-    width: 32px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
     border-style: solid;
+    border-radius: 4px;
 }
+.widekeyR {
+    grid-column: 10/ span 2;
+    border-width: 1px;
+    border-color: rgb(97,97,97);
+    padding: 2px;
+    border-style: solid;
+    border-radius: 4px;
+ }
+
 
 .toprowkeys {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1px;
+    background: yellow;
+    padding: 0;
+    margin: 0;
 }
 
 .midrowkeys {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 1px;
+    padding: 0;
+    margin: 0;
+    background: purple;
 }
 
 .btmrowkeys {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 1px;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+    background: orange;
 }
 
 .backdrop {
@@ -129,4 +127,14 @@ text-align: center;
 
 ul {
     list-style-type: none;
+}
+
+
+main {
+    padding-top: 0;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
 }
