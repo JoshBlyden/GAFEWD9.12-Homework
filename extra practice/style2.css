@@ -65,7 +65,7 @@ text-align: center;
     height: 30px;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     border-style: solid;
@@ -117,6 +117,7 @@ text-align: center;
     margin: 0;
     background: orange;
 }
+
 
 .backdrop {
     background-color: rgb(16,16,16);
