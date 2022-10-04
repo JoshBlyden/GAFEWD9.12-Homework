@@ -5,6 +5,10 @@
 // Create a function called `squared` that takes one argument
 // The function will return the argument times itself (the square of the number)
 
+function squared(num){
+    return (num * num);
+}
+
 console.log(squared(2));
 console.log(squared(5));
 console.log(squared(-3));
@@ -16,20 +20,36 @@ console.log(squared(-3));
 // Create a function called `stringLength` that returns the length of a string (how many characters?)
 // So: stringLength("hello") would return 5
 
+
+function stringLength(chrctrs){
+    return (chrctrs.length)
+}
+
 console.log(stringLength("testing"))
 console.log(stringLength("This is a longer string."))
+
+
 
 // 3. Add two numbers together
 
 // Create a function called addNumbers
 // Takes two arguments and returns the sum of those arguments
 
-// console.log(addNumbers(4, 2));
-// console.log(addNumbers(6, 3));
+function addNumbers(mynumber1, mynumber2){
+    return(mynumber1 + mynumber2);
+}
+
+console.log(addNumbers(4, 2));
+console.log(addNumbers(6, 3));
 
 // 4. Create a function called sayHello
 // Takes one argument
 // Returns a string that is the combination of "Hello, " + the argument passed into the function
 // So sayHello("Paul") would return "Hello, Paul";
 
-// console.log(sayHello("Paul"));
+
+function sayHello (guestname){
+    return "Hello, " + guestname;
+}
+
+console.log(sayHello("Paul"));
