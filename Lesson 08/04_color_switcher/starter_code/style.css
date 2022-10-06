@@ -36,3 +36,8 @@ p {
 #whiteButton {
   background: white;
 }
+
+.darkMode {
+  background: darkslategrey;
+  color: white;
+}
