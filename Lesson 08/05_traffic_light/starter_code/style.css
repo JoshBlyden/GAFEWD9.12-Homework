@@ -35,3 +35,15 @@ body {
   margin: 25px auto;
   transition: background 500ms;
 }
+
+.redBulb {
+  background-color: red;
+ }
+
+ .yellowBulb {
+  background-color: yellow;
+ }
+
+.greenBulb {
+  background-color: green;
+}
