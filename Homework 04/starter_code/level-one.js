@@ -26,20 +26,12 @@ function declareWinner() {
 // Create a function for adding +10 to the score
 
 function plusTEN(){
-  score += 10;
-  scoreEl.innerText = score;
-}
+  score += 10;                // Create a function for adding +10 to the score
+  scoreEl.innerText = score; // Change the score board to reflect the score
+  if (score < 100) {scoreEl.innterText = score; // Show score up until 100 points
+  }else declareWinner(); // At 100 points delcare Winner
+};
+
+//When ball is clicked, launch funciton
 
 ballEl.addEventListener('click',plusTEN) 
-
-
-
-
-
-
-
-//When ball is clicked, launch funciton to add 10 points
-
-
-
-//Create a rule that when the score is zero, the game end
