@@ -67,11 +67,13 @@ document.querySelector('#scissors').addEventListener('click',function(e){
 document.querySelector('#paper').addEventListener('click',function(e){
     e.preventDefault();
     let computerPlayerChoice = computerChoice();
-    compare("paper", computerPlayerChoice);
+    let result = compare("paper", computerPlayerChoice);
+    document.querySelector("#decision").innerHTML = result;
 });
 
 document.querySelector('#rock').addEventListener('click',function(e){
     e.preventDefault();
     let computerPlayerChoice = computerChoice();
-    compare("rock", computerPlayerChoice);
+    let result = compare("rock", computerPlayerChoice);
+    document.querySelector ("#decision").innerHTML = result;
 });

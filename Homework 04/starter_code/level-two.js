@@ -19,7 +19,8 @@ function declareWinner() {
 
 // Create a function for adding +10 to the score
 
-function plusTEN(){
+function plusTEN(e){
+  if (e.target.classList.contains('js-ball'))
     score += 10;                // Create a function for adding +10 to the score
     scoreEl.innerText = score; // Change the score board to reflect the score
     if (score < 100) {scoreEl.innterText = score; // Show score up until 100 points
@@ -28,4 +29,4 @@ function plusTEN(){
   
   //When ball is clicked, launch funciton
   
-  ballEl.addEventListener('click',plusTEN) 
+  arenaEl.addEventListener('click',plusTEN);
