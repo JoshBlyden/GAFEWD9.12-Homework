@@ -12,7 +12,7 @@ const stopLightBulb = document.querySelector(" #stopLight");
 
 // function to add light and remove light
 function turnStopLightOn(){
-    clearLights() // Deactivates all lights
+    clearLights(); // Deactivates all lights
     stopLightBulb.classList.add('redBulb');
 } 
 
@@ -40,7 +40,7 @@ const slowLightBulb = document.querySelector(" #slowLight");
 
 // function to add light, and remove light
 function turnSlowLightOn(){
-    clearLights() // Deactivates all lights
+    clearLights(); // Deactivates all lights
     slowLightBulb.classList.add('yellowBulb');
 } 
 
@@ -60,11 +60,11 @@ slowLightBulb.addEventListener('click',turnSlowLightOff);
 // Identify Go Light button
 const goLightBtn = document.querySelector("#goButton")
 // Identify go light bulb
-const goLightBulb = document.querySelector(" #goLight");
+const goLightBulb = document.querySelector("#goLight");
 
 // function to add light and remove light
 function turnGoLightOn(){
-    clearLights() // Deactivates all lights
+    clearLights(); // Deactivates all lights
     goLightBulb.classList.add('greenBulb');
 } 
 
