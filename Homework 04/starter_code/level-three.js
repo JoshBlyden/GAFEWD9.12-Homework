@@ -3,13 +3,7 @@
 ## Level 3 - Bonus Level
 Level 3 also has 3 moving balls but of different sizes! Each ball is therefore worth a different amount of points. The number of points the user should get for each ball is saved in side of a data attribute on the ball HTML elements. You can access the data attribute of an element from the event object by looking at the event target's `dataset` property. When the user clicks on a ball, increment their score based on how many points that ball is worth until they reach 100.
 
- <section class="level-arena js-arena">
-        <span class="ball js-ball" data-increment="20"></span>
-        <span class="ball js-ball" data-increment="5"></span>
-        <span class="ball js-ball" data-increment="10"></span>
-      </section>
-
- *
+*
  */
 
 let score = 0;
@@ -19,7 +13,26 @@ let scoreEl = document.querySelector('.js-score');
 
 
 
+/*
+*
+*
+*
+*
 
+****************** 
+
+Hi TOR AND PAULA! 
+
+SO IT WORKS... BUT I DID THIS IS IN THE "NOT CORRECT" WAY FOR THIS ASSINGMENT- Because I modified the hTMLl by giving each ball an ID, and then running seperate funcitons for each ball. I see now, from the solution, that there is a way to to run this all in one function- so trying to understand and learn this now.  
+
+Just fyi- thanks!!
+
+****************** 
+*
+*
+*
+*
+*/
 
 // If data-increment is 20, then add 20 points
 
