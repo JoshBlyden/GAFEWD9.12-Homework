@@ -1,18 +1,5 @@
 
 
-/* Buttons */
-
-
-/* Main CTA */
-
-.ctaMain {
-    border-radius: 100px;
-    background-color: rgb(50, 50, 50);
-    padding: 8px 16px 8px 16px;
-    color: white;
-    text-decoration: none;
-}
-
 
 /* Navigation */
 
@@ -64,9 +51,102 @@ margin-bottom: 24px;
 
 .heroLander {
     background-color: darkgray;
+    padding: 1px;
     margin: 0;
 }
 
 .heroTxt {
-    margin-left: 24px;
+    margin: 56px 24px 0 24px;
+    padding: 0px;
+    padding-bottom: 88px;
+}
+
+.heroTxt h1 {
+    font-size: 80px;
+    padding: 0px;
+    margin: 0;
+}
+
+.heroTxt p {
+    font-size: 24px;
+    padding: 0px;
+    margin: 24px 0 48px 0;
+}
+
+
+/* Main CTA */
+
+.ctaMain {
+    border-radius: 100px;
+    background-color: rgb(50, 50, 50);
+    padding: 8px 16px 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.HeroBtn {
+    font-size: 20px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px;
+}
+
+
+/* Main Left Column */
+
+.articleNav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+.articleNav a {
+    color: black;
+    text-decoration: none;
+}
+
+.articleNav li {
+    list-style-type: none;
+}
+
+.navActive {
+    border-bottom-style: solid;
+    padding: 2px;
+    border-bottom-width: 1px;
+    font-weight: bold;
+}
+
+.navDeactive {
+    padding: 2px;
+    color: rgba(50,50,50,0.75);
+}
+
+.articleCard {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 343px;
+    margin-bottom: 32px;
+}
+
+.articleDetails {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.articleDetails li {
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.readtime {
+    font-size: 12px;
+    margin-bottom: 0;
 }
