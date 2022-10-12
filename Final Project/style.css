@@ -98,11 +98,19 @@ main {
 
 /* Main Left Column */
 
+.columnleft {
+    justify-content: center;
+}
+
 .articleNav {
     display: flex;
     gap: 16px;
     margin-bottom: 40px;
     padding-bottom: 0;
+    margin-left: 0px;
+    padding-left: 0px;
+
+    justify-content: center;
 }
 
 .articleNav a {
@@ -123,6 +131,8 @@ main {
 
 .navDeactive {
     padding: 2px;
+
+
     color: rgba(50,50,50,0.75);
 }
 
