@@ -99,6 +99,8 @@ main {
 /* Main Left Column */
 
 .columnleft {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
