@@ -3,7 +3,7 @@
 
 .pbeTopHeader {
     background: black;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     border-bottom: 1px solid #22495E;
 }
@@ -16,6 +16,7 @@
 
 .pbeTopHeaderSiteLogo {
     margin: 10px 20px 10px 0;
+
 }
 
 .pbeTopHeaderSiteNavigation {

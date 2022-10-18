@@ -13,6 +13,7 @@
     }
 }
 
+
 /* Notices */
 
 .pbeNotice {
@@ -27,7 +28,7 @@
 /* Description Accordion */
 
 .pbeDescAccordion > section {
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
 
 .pbeDescAccordion > section:first-child {
@@ -35,7 +36,7 @@
 }
 
 .pbeDescAccordion section > header {
-    display:flex;
+    display: flex;
 }
 
 
@@ -47,18 +48,26 @@
     margin-right:2rem;
     margin-left: 0.5rem;
 }
+
 .pbeDescAccordion section > header {
     cursor:pointer;
+    
 }
 
 .pbeDescAccordion section > header h1 {
     margin: 0;
     padding: 0;
+    font-size: 24px;
+    color: #22495E;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 
 .pbeDescAccordion .descClose {
     display:none;
+
 }
 
 .pbeDescAccordionCollapsed .pbeDescContent {
@@ -70,9 +79,14 @@
 }
 
 .pbeDescAccordionCollapsed .descClose {
-    display:block;
+    display:flex;
+    gap: 24px;
 }
 
+#pbeProductDesc {
+    font-family: 'Lora', serif; 
+    line-height: 2;
+}
 
 /* Chicken Info */
 
@@ -106,6 +120,7 @@
 .pdeChickenDataPricingTable td,
 .pdeChickenDataPricingTable th {
     padding: 10px;
+    text-align: center;
 }
 
 /* Purchase Form */
@@ -130,7 +145,7 @@
 
 .pbePurchaseForm input[type=submit] {
     background: #22495E;
-    color: goldenrod;
+    color: white;
     padding: 10px;
     text-transform: uppercase;
     display:block;
@@ -145,6 +160,22 @@
     }
     .pbePurchaseForm label {
         width:100%;
+    }
+
+    #pbeProductPageTitle {
+        order: 1;
+    }
+
+    #pbeProductPagePurchase {
+        order: 2;
+    }
+
+    #pbeProductDesc {
+        order: 3;
+    }
+
+    #pbeProductPageUpsell {
+        order: 4;
     }
 }
 
@@ -166,9 +197,9 @@
 }
 
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .pbeCrossSell > li {
-        grid-column:span 4;
+        grid-column:span 2;
     }
 }
 

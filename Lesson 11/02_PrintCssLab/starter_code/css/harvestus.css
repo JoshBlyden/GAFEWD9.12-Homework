@@ -151,6 +151,7 @@ body {
 
 .pcl_invoice table tr {
     background:#FFDF9F;
+
 }
 
 .pcl_invoice table thead,
@@ -190,6 +191,38 @@ body {
 
     /* Hide Navigation */
 
+    @media print {
+        
+        body {
+            margin: .75in;
+        }
+
+        .pcl_topnav {
+            display: none;
+        }
+
+        .pcl_productbar {
+            display: none;
+        }
+
+        .pcl_footer .pcl_navBlock  {
+            display: none;
+        }
+
+        .pcl_invoice_total  {
+            border-top: 1px solid black;
+        }
+
+        .pcl_contentOuter {
+            width: 7in;
+
+        }
+
+        .pcl_invoice_items tbody td {
+            border-bottom: 1px solid grey;
+        }
+    }
+
 
 
 
@@ -200,6 +233,7 @@ body {
 
 
     /* Add borders to the table */
+
 
 
 
