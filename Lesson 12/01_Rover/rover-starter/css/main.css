@@ -28,3 +28,317 @@ body {
   width:100%;
   overflow-x:hidden;
 }
+
+
+/* Header */
+
+
+.site_header_inner {
+  display: flex;
+  align-items: center;
+}
+
+.site_header_inner .logo img {
+  max-width: 150px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.navigation_first, .sign_up {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #66727c;
+  font-size: 20px;
+}
+
+
+/* Hero */
+
+.rover_hero_container {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  padding: 128px 0px;
+  overflow: hidden;
+}
+
+.hero_callout {
+  margin-left: 0px;
+  max-width: 500px;
+  margin-top: 0px;
+  padding: 24px;
+}
+
+.hero_callout h1 {
+  font-size: 48px;
+  color: #66727c
+}
+
+.hero_callout p {
+  font-size: 32px;
+  color: #66727c;
+  line-height: 1.5;
+}
+
+
+.rover_middle_section h1 {
+text-align: center;
+font-size: 24px;
+}
+
+.rover_middle_section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+
+.container_fixed {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Main columns */
+
+.rover_facts_2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+}
+
+.rover_facts_container ul {
+  list-style-type: none;
+}
+
+.rover_facts_container ul li {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.rover_cta_header img {
+  max-width: 50px;
+}
+
+.rover_cta_header {
+  display: flex;
+  gap: 24px;
+  background: #f4f5f6;
+  padding: 24px;
+  border-radius: 8px 8px 0px 0px;
+  margin-bottom: 48px;
+}
+
+.rover_cta_box {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 0.5px;
+  border-radius: 8px;
+}
+
+.rover_facts {
+list-style-type: none;
+margin-bottom: 48px;
+max-width: 450px;
+}
+
+.rover_facts li{
+  margin-bottom: 16px;
+}
+.rover_facts li i {
+  color: #14a96d;
+}
+
+.rover_cta_box_content p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+a.btn {
+    background: #14a96d;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    width: 550px;
+    margin: 0px 16px;
+}
+
+a.btn_hero {
+  max-width: 250px;
+}
+
+.btn:hover {
+  background: darkgreen;
+  color: white;
+}
+
+
+
+.rover_protections {
+  text-align: center;
+}
+
+.rover_protections a {
+  text-decoration: none;
+  color: #06748a;
+}
+
+
+
+.rover_cta_box_content > *:last-child {
+  margin-bottom: 16px;
+}
+
+/* Testimonials */
+
+.rover_action_shot {
+  background-image: url(../img/lady-with-her-dogs.jpg);
+  background-size: cover;
+  min-height: 450px;
+}
+
+.rover_action_quote_container {
+  background: white;
+  max-width: 480px;
+  padding: 32px;
+  border-style: solid;
+  border-color: black;
+}
+
+.rover_action_quote_container p {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.rover_action_quote_container span {
+color: #66727c;
+}
+
+p.rover_action_quote_tagline {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.rover_action_quote_tagline a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #06748a;
+}
+
+h1.section_hdr {
+  text-align: center;
+  margin-top: 64px;
+  font-size: 24px;
+}
+
+
+.rover_123_item_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 48px;
+}
+
+.rover_123_item img {
+  max-width: 96px;
+  align-self: center;
+}
+
+.rover_123_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.rover_action_dash {
+  background-color: #14a96d;
+  width: 56px;
+  height: 4px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero_callout {
+    background: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .site_header {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .site_header {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
+
+  .hero_callout {
+    max-width: 100%;
+    margin: 20px 0;
+
+  }
+
+  .hero_callout p {
+    margin-top: 0px;
+  }
+
+  .rover_hero_container {
+    background: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .hero_callout .hero_hdr {
+    display: none;
+  }
+
+  .hero_callout .hero_tagline {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .rover_hero_container {
+    padding: 0px;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .rover_facts_2col {
+    grid-template-columns: 1fr;
+  }
+
+  .rover-cta-box-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+
+}
