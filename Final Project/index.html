@@ -12,8 +12,7 @@
 <body>
 
     <header>
-
-        <nav class="mainNav">
+        <nav class="mainNav container_fixed">
             <img src="" class="logoNav" alt="Sad Music City Logo"/>
             <ul class="topRightNav">
                 <li><a href="#">home</a></li>
@@ -24,19 +23,23 @@
                 <li><a class="ctaMain" href="#">Join the City</a></li>
             </ul>
         </nav>
-
-        <section class="heroLander">
-            <div class="heroTxt">
-                <h1>sad music city</h1>
-                <p>Subheader lorem ipsum lorem ipsum</p>
-                <a class="ctaMain HeroBtn" href="#">Join the City</a>
-            </div>
-         </section>
-
     </header>
 
     <main>
-        <section class="columnLeft">
+        <section class="heroLander">
+            <div class="container_fixed">
+                <div class="heroTxt">
+                    <h1>sad music city</h1>
+                    <p>Subheader lorem ipsum lorem ipsum</p>
+                    <a class="ctaMain HeroBtn" href="#">Join the City</a>
+                </div>
+            </div>
+         </section>
+
+  
+
+        <div class="columns"> 
+        <section class="container_fixed columnLeft">
             <ul class="articleNav">
                 <li><a href="#" class="navActive">Trending</a></li>
                 <li><a href="#" class="navDeactive">Newest</a></li>
@@ -95,12 +98,17 @@
 
         
         
-        <section class="columnRight">
+        <section class="columnRight container_fixed">
+            <header class="feat_artist">
+                <h1>Featured Artist</h1>
+            </header>
 
             <iframe width="480" height="298"
                 src="https://www.youtube.com/watch?v=2q01G4te-Ngautoplay=1&mute=1">
             </iframe>
         </section>
+
+    </div>
     </main>
 
 

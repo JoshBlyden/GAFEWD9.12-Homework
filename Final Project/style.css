@@ -1,29 +1,25 @@
 
 
 
+
 /* Navigation */
+
+
 
 .mainNav {
     display: flex;
     justify-content: space-between;
-    background-color: lightgrey;
 }
 
 nav li {
     list-style-type: none;
 }
 
-header {
-    margin: 0;
-}
-
-nav {
-    margin: 0;
-}
 
 .topRightNav a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 
 }
 
@@ -36,29 +32,26 @@ nav {
     display: flex;
     justify-content: flex-end;
     gap: 24px;
-    margin-right: 48px;
     margin-top: 24px;
     margin-bottom: 24px; 
 }
 
 .logoNav {
-margin-left: 48px;
-margin-top: 24px;
-margin-bottom: 24px; 
+    margin-top: 24px;
+    margin-bottom: 24px; 
 }
 
 /* Hero */
 
 .heroLander {
     background-color: darkgray;
-    padding: 1px;
-    margin: 0;
+    padding: 128px 0;
 }
 
 .heroTxt {
-    margin: 56px 24px 0 24px;
-    padding: 0px;
-    padding-bottom: 88px;
+    background:yellow;
+    padding: 24px;
+    max-width: 500px;
 }
 
 .heroTxt h1 {
@@ -89,7 +82,7 @@ margin-bottom: 24px;
 }
 
 
-main {
+.columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 24px;
@@ -101,7 +94,7 @@ main {
 .columnleft {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .articleNav {
@@ -111,8 +104,8 @@ main {
     padding-bottom: 0;
     margin-left: 0px;
     padding-left: 0px;
-
     justify-content: center;
+    margin-top: 6px;
 }
 
 .articleNav a {
@@ -133,12 +126,18 @@ main {
 
 .navDeactive {
     padding: 2px;
-
-
     color: rgba(50,50,50,0.75);
 }
 
+.articleCardsColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .articleCard {
+    align-self: center;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     width: 343px;
@@ -172,6 +171,28 @@ main {
 }
 
 
+/* MAIN COLUMN RIGHT */ 
+
+.feat_artist h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.feat_artist {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.columnRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
 
 /* FOOTER */ 
 
@@ -179,4 +200,11 @@ footer {
     background-color: lightgrey;
     margin: 0;
     height: 160px;
+}
+
+
+
+.container_fixed {
+    max-width: 1200px;
+    margin: 0 auto;
 }
