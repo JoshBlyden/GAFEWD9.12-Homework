@@ -2,7 +2,7 @@ body {
     margin: 64px;
 }
 
-ul {
+/* ul {
     list-style-type: none;
     display: flex;
     gap: 12px;
@@ -56,11 +56,26 @@ text-align: center;
         z-index: 2;
         -moz-transform: translate(0, -.05em);
         -o-transform: translate(0, -.1em);
+	}
 
+*/
 
-
-
+.box {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	background-color:yellow;
 }
 
+.ctaMain {
+    border-radius: 100px;
+    background-color: rgb(50, 50, 50);
+    padding: 8px 16px 8px 16px;
+    color: white;
+    text-decoration: none;
+}
 
-
+.blueback {
+	background-color: blue;
+	font-size: 30px;
+}

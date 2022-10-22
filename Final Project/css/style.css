@@ -1,5 +1,9 @@
 
 
+.container_fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* Navigation */
@@ -9,6 +13,7 @@
 .mainNav {
     display: flex;
     justify-content: space-between;
+    margin-left: 24px;
 }
 
 nav li {
@@ -34,6 +39,7 @@ nav li {
     gap: 24px;
     margin-top: 24px;
     margin-bottom: 24px; 
+    margin-right: 24px;
 }
 
 .logoNav {
@@ -49,9 +55,10 @@ nav li {
 }
 
 .heroTxt {
-    background:yellow;
+    background: white;
     padding: 24px;
     max-width: 500px;
+    margin-left: 24px;
 }
 
 .heroTxt h1 {
@@ -140,6 +147,7 @@ nav li {
 .articleCard {
     align-self: center;
     border-bottom-style: solid;
+    border-bottom-color:rgb(168, 168, 168);
     border-bottom-width: 1px;
     width: 343px;
     margin-bottom: 32px;
@@ -156,12 +164,19 @@ nav li {
     margin-top: 8px;
 }
 
+.writerpic {
+    width: 32px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
 .articleDetails {
     display: flex;
     justify-content: flex-start;
     gap: 8px;
     padding-left: 0;
     margin: 0;
+    align-items: center;
 }
 
 .articleDetails li {
@@ -180,7 +195,16 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.profBackground {
+    background-color: grey;
+    border-radius: 100%;
+    padding: 0;  display: flex;
+    flex-direction: column;
+
+
 }
 
 /* IMAGES */
@@ -225,7 +249,55 @@ footer {
 
 
 
-.container_fixed {
-    max-width: 1200px;
-    margin: 0 auto;
+/*  MEDIA */ 
+
+@media (min-width: 961px)
+{
+    .hamburgerMenu {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:960px) {
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heroLander {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroTxt {
+        text-align: center;
+        margin: 0;
+    }
+
+    .topRightNav {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        margin: 32px;
+        color: black;
+    }
+
+    .mainNav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .heroTxt h1 {
+        font-size: 56px;
+    }
+
+    .heroTxt p {
+        font-size: 18px;
+    }
 }
