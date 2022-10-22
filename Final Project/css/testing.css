@@ -2,7 +2,7 @@ body {
     margin: 64px;
 }
 
-/* ul {
+ ul {
     list-style-type: none;
     display: flex;
     gap: 12px;
@@ -58,7 +58,7 @@ text-align: center;
         -o-transform: translate(0, -.1em);
 	}
 
-*/
+
 
 .box {
 	display: flex;

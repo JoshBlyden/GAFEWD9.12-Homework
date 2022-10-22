@@ -1,7 +1,7 @@
 
 
 .container_fixed {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -92,7 +92,7 @@ nav li {
 .columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 56px;
+    margin: 56px 24px;
 }
 
 
