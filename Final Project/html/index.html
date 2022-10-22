@@ -6,6 +6,8 @@
 
   <link rel="stylesheet" href="../css/normalize.css"/>
   <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/navigation.css"/>
+
 
   <script src="https://kit.fontawesome.com/45f48bce20.js" crossorigin="anonymous"></script>
 
@@ -13,13 +15,20 @@
 
 <body>
 
+    <!--Home page -->
+    <style>
+        #homepage {
+            border-bottom: 1px solid black;
+        }
+    </style>
+
     <header class="container_fixed">
         <nav class="mainNav container_fixed">
-            <img src="" class="logoNav" alt="Sad Music City Logo"/>
+            <a href="#"><img class="navLogo" src="../images/Placeholderlogo.png" class="logoNav" alt="Sad Music City Logo"/></a>
                 
             <div class="linksAndCta">
             <ul class="topRightNav container_fixed">
-                    <li><a href="#">home</a></li>
+                    <li><a id="homepage" href="../html/index.html">home</a></li>
                     <li><a href="#">artists</a></li>
                     <li><a href="#">toptearmusic</a></li>
                     <li><a href="#">about</a></li>
@@ -57,10 +66,12 @@
 
             <div class="articleCardsColumn">
                 <!---Article 1 -->
-                <div class="articleCard">
-                    <img class="articleimgpreview" src="../images/Grammy.jpeg" alt="Image Preview of Grammy Award"/>
-                    <h1 class="articleHeaders"> Today's Forcast: Limelight for the lyricists!</h1> 
-                    <p>A look at the Grammy's brand new Song Writer of the Year award.</p>
+                    <div class="articleCard">
+                    <a href="../html/articleGrammy.html"><img class="articleimgpreview" src="../images/Grammy.jpeg" alt="Image Preview of Grammy Award"/></a>
+                    <a href="../html/articleGrammy.html">
+                        <h1 class="articleHeaders"> Today's Forcast: Limelight for the lyricists!</h1> 
+                        <p>A look at the Grammy's brand new Song Writer of the Year award.</p>
+                    </a>
                     <div class ="articleBtm">
                         <p class="readtime">5 min read</p>
                         <ul class="articleDetails">
@@ -72,9 +83,11 @@
                 </div>
                 <!---Article 2 -->
                 <div class="articleCard">
-                    <img class="articleimgpreview" src="../images/Julia Cutout.jpeg" alt="Image Preview Of Julia Michaels"/>
+                    <a href="../html/articleJulia.html"><img class="articleimgpreview" src="../images/Julia Cutout.jpeg" alt="Image Preview Of Julia Michaels"/></a>
+                    <a href="../html/articleJulia.html">
                     <h1 class="articleHeaders">Resident Julia Michaels</h1>
                     <p>The Grammy Nominated Singer-Songwriter is making music for everyone, and now Disney!</p>
+                    </a>
                     <div class ="articleBtm">
                         <p class="readtime">5 min read</p>
                         <ul class="articleDetails">
@@ -86,9 +99,11 @@
                 </div>
                 <!---Article 3 -->
                 <div class="articleCard">
-                    <img class="articleimgpreview" src="../images/tiktokgreen.jpeg" alt="Image Preview of TikTok Logo Smiley Face"/>
-                    <h1 class="articleHeaders">Go Viral or Go Home</h1>
-                    <p>TikTok and the Trajectory of Music Promotion</p>
+                    <a href="../html/articletiktok.html"><img class="articleimgpreview" src="../images/tiktokgreen.jpeg" alt="Image Preview of TikTok Logo Smiley Face"/></a>
+                    <a href="../html/articleJuliawolf.html">
+                        <h1 class="articleHeaders">Go Viral or Go Home</h1>
+                        <p>TikTok and the Trajectory of Music Promotion</p>
+                    </a>
                     <div class ="articleBtm">
                         <p class="readtime">5 min read</p>
                         <ul class="articleDetails">
@@ -100,9 +115,11 @@
                 </div>
                 <!---Article 4 -->
                 <div class="articleCard">
-                    <img class="articleimgpreview" src="../images/Juliawolf.jpeg" alt="Image Preview of Julia Wolf"/>
-                    <h1 class="articleHeaders">Who is Julia Wolf?</h1>
-                    <p>There's a new artist on the rise that you need to know about</p> 
+                    <a href="../html/articleJuliawolf.html"><img class="articleimgpreview" src="../images/Juliawolf.jpeg" alt="Image Preview of Julia Wolf"/></a>
+                    <a href="../html/articleJuliawolf.html">
+                        <h1 class="articleHeaders">Who is Julia Wolf?</h1>
+                        <p>There's a new artist on the rise that you need to know about</p> 
+                    </a>
                     <div class ="articleBtm">
                         <p class="readtime">5 min read</p>
                         <ul class="articleDetails">

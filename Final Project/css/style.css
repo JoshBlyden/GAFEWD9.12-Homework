@@ -5,58 +5,17 @@
     margin: 0 auto;
 }
 
-
-/* Navigation */
-
-.linksAndCta {
-    display: flex; 
-    align-items: center;
-    margin-right: 24px;
-}
-
-.mainNav {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 24px;
-}
-
-nav li {
-    list-style-type: none;
-}
-
-
-.topRightNav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-
-}
-
-.topRightNav ul {
-    display: flex;
-    gap: 8px;
-}
-
-.topRightNav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-    margin-top: 24px;
-    margin-bottom: 24px; 
-    margin-right: 24px;
-}
-
-.logoNav {
-    margin-top: 24px;
-    margin-bottom: 24px; 
+.navLogo {
+    width: 96px;
 }
 
 /* Hero */
 
 .heroLander {
-    background-color: darkgray;
+    background-color: #C3D6F4;
     padding: 128px 0;
 }
+
 
 .heroTxt {
     background: white;
@@ -88,6 +47,9 @@ nav li {
     text-decoration: none;
 }
 
+.ctaMain:hover {
+    background-color: #0a2d67;
+}
 
 .columns {
     display: grid;
@@ -151,6 +113,15 @@ nav li {
     border-bottom-width: 1px;
     width: 343px;
     margin-bottom: 32px;
+}
+
+.articleCard a {
+    text-decoration: none;
+}
+
+.articleCard a:visited {
+    text-decoration: none;
+    color:black;
 }
 
 .articleHeaders {
