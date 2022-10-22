@@ -1,4 +1,6 @@
-
+body {
+    font-family: sans-serif;
+}
 
 .container_fixed {
     max-width: 1440px;
@@ -20,7 +22,7 @@
 .heroTxt {
     background: white;
     padding: 24px;
-    max-width: 500px;
+    max-width: 600px;
     margin-left: 24px;
 }
 
@@ -111,7 +113,7 @@
     border-bottom-style: solid;
     border-bottom-color:rgb(168, 168, 168);
     border-bottom-width: 1px;
-    width: 343px;
+    width: 450px;
     margin-bottom: 32px;
 }
 
@@ -181,8 +183,8 @@
 /* IMAGES */
 
 .articleimgpreview {
-    width: 343px;
-    height: 274px;
+    width: 450px;
+    height: 360px;
     border-radius: 8px;
 }
 
@@ -231,7 +233,7 @@ footer {
 
 
 
-@media (max-width:960px) {
+@media (max-width: 960px) {
     .columns {
         display: grid;
         grid-template-columns: 1fr;
@@ -240,6 +242,7 @@ footer {
     .heroLander {
         display: flex;
         justify-content: center;
+        width: 100px;
     }
 
     .heroTxt {
@@ -261,9 +264,11 @@ footer {
         display: flex;
         align-items: center;
     }
+
+    
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .heroTxt h1 {
         font-size: 56px;
     }
@@ -271,4 +276,19 @@ footer {
     .heroTxt p {
         font-size: 18px;
     }
+
+    .featVid {
+        max-width: 343px;
+    }
+
+    .articleimgpreview {
+        width: 343px;
+        height: 274px;
+    }
+
+
+    .articleCard a, .articleCard h1, .articleCard p, .articleBtm, .articleCardsColumn, .articleCard {
+        width: 343px;
+    }
 }
+

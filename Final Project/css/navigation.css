@@ -49,3 +49,59 @@ nav li {
     margin-bottom: 24px; 
 }
 
+
+
+
+/*  MEDIA */ 
+
+@media (min-width: 961px)
+{
+    .hamburgerMenu {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 960px) {
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heroLander {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .heroTxt {
+        text-align: center;
+        margin: 0;
+    }
+
+    .linksAndCta {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        margin: 32px;
+        color: black;
+    }
+
+    .mainNav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroTxt h1 {
+        font-size: 56px;
+    }
+
+    .heroTxt p {
+        font-size: 18px;
+    }
+}
