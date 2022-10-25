@@ -14,6 +14,9 @@ let theAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
 
 // Write a function called alphabetLength that takes one array as a parameter and returns the length of that array 
 
+function alphabetLength(firstSetofNumbers){
+  return firstSetofNumbers.length;
+}
 
 // Print your answer to the dom
 document.querySelector("#exercise-one").textContent = alphabetLength(theAlphabet); 
@@ -24,12 +27,18 @@ document.querySelector("#exercise-one").textContent = alphabetLength(theAlphabet
 
 // Create a planets array that has nine string values in it
 
+let planets = ['mercury','venus','earth','mars','jupitor','uranus','saturn','neptune','pluto'];
 // Remove the last planet from the array (sorry Pluto)
+
+planets.pop();
+
+planets.push("Josh's Planet");
 
 // Add a new planet to the end of the array
 
-// Print your new array to the dom
 
+// Print your new array to the dom
+document.querySelector("#exercise-two").innerText = planets.join(", "); 
 
 
 // Exercise 3 - for loop
@@ -37,6 +46,10 @@ document.querySelector("#exercise-one").textContent = alphabetLength(theAlphabet
 let snacks = ["candy", "popcorn", "potato chips", "fruit", "nuts"];
 
 // Create a for loop that prints each snack item to the console along with its index (ex: "3. fruit")
+
+for(let i=0; i<snacks.length; i++){
+  console.log(i + ". " + snacks[i]);
+}
 
 // Bonus - use string interpolation or a "template string" to print your string to the console (google it)
 // Ex: `Notice the backticks instead of quotes. This is string interpolation syntax with a ${variable}`
@@ -48,6 +61,17 @@ let snacks = ["candy", "popcorn", "potato chips", "fruit", "nuts"];
 
 // Create a for loop that iterates over the snack array, but only prints "My favorite snack is (your favorite snack)" to the dom
 
+for(let i=0; i<snacks.length; i++){
+  console.log(i + ". " + snacks[i]);
+}
+
+
+for(let i=0; i<snacks.length; i++){
+
+  if(snacks[i] === "candy"){
+  document.querySelector("#exercise-four").innerText = snacks[i];
+}
+}
 
 
 
@@ -56,3 +80,19 @@ let snacks = ["candy", "popcorn", "potato chips", "fruit", "nuts"];
 const pets = ["cat", "dog", "iguana", "guinea pig", "rabbit", "hedge hog", "parakeet"]
 
 // Create a for loop that creates and prints a new li for each item in the pet array
+
+for(let i=0; i<pets.length; i++){
+ 
+  // create list item
+
+  let newLi = document.createElement('li');
+  // set the text of the list item
+
+  newLi.innerText = pets[i];
+  // target the my list of pets and append list of item to list
+ 
+  document.querySelector("#exercise-five").append(newLi);
+
+
+}
+
