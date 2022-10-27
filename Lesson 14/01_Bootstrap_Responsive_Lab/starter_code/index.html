@@ -11,18 +11,22 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
 
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
+            <div class= "container">
 
             <!-- Site Header -->
-            <header class="site-header clearfix">
+            <div class="row">
+            <header class=" col-12 site-header clearfix">
                 <a href="#" class="hamburger"><img src="images/Hamburger_icon.png" alt="Show Menu" /></a>
 
                 <h1 class="logo"><a href="/">Startup Matchmaker</a></h1>
-
-
+          
                 <nav class="navigation">
                     <ul class="main-nav horizontal-nav">
                         <li><a href="#"><strong class="main-nav-hello">Find Developers</strong></a></li>
@@ -33,56 +37,77 @@
                     </ul>
                 </nav>
             </header>
+        </div>
 
             <!-- Tagline -->
-                <div class="tagline">
+            <div class="row">
+                <div class="col-12 tagline">
                     Because two brains <del>taste</del> <ins>are</ins> better than one.
                 </div>
+            </div>
 
 
             <!-- Hero -->
-                <section class="hero clearfix">
+            <div class="row">
+        
+                <section class="col-12 hero clearfix">
+                    <div class="row">
+                        <div class="col-5">
                         <div class="hero-block">
                                 <h1 class="block-heading">Meet your Match!</h1>
                                 <p class="block-copy">Having a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the place for designers and developers to find each other.</p>
-                                <a class=" btn-hero" href="#">Create a Profile</a>
+                                <a class="btn btn-lg btn-hero" href="#">Create a Profile</a>
+                        </div>
                     </div>
+                </div>
 
                 </section>
 
 
             <!-- Blocks -->
-            <section class="row block-group clearfix">
 
-                <div class="block">
+            <section class="block-group clearfix container text-center">
+
+                <div class="row">
+
+                <div class="col-md-4 block">
                     <h2 class="block-heading">Create a Profile</h2>
                     <p class="block-copy">Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
-                    <a class=" btn-block" href="#">Sign up Now</a>
+                    <a class="btn btn-block" href="#">Sign up Now</a>
                 </div>
 
-                <div class="block">
+                <div class="col-md-4 block">
                     <h2 class="block-heading">Find a Developer</h2>
                     <p class="block-copy">Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
-                    <a class=" btn-block" href="#">Start Your Search</a>
+                    <a class="btn btn-block" href="#">Start Your Search</a>
 
                 </div>
 
-                <div class="block">
+                <div class="col-md-4 block">
                     <h2 class="block-heading">Find a Designer</h2>
                     <p class="block-copy">Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
-                    <a class=" btn-block" href="#">Find a Designer</a>
+                    <a class="btn btn-block" href="#">Find a Designer</a>
                 </div>
-
+            </div>
             </section>
 
+        
+
             <!-- Footer -->
+            <div class="row">
                 <footer class="col-lg-12 copyright">
                     <span class="line-up">&copy;</span> 2016 Startup Matchmaker. Made in DC.
                 </footer>
+            </div>
+        </div>
 
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
         <script src="js/scripts.js"></script>
     </body>
 </html>

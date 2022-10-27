@@ -1,4 +1,7 @@
-$('.hamburger').on('click', function( e ){
-    e.preventDefault();
-    $('.navigation').toggleClass('showNav');
-});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".hamburger").addEventListener("click", function () {
+      document.querySelector(".navigation").classList.toggle("showNav");
+    });
+  });
+  
