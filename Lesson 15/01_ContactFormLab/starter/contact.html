@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Relaxr Blog</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+		<header class="relaxrFormHeader">
+			<div class="logoHaus">
+				<h1 class="logo">Relaxr</h1>
+			</div>
+			<div class="navHaus">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="contact" class="relaxrFormTwinCol">
+			<div class="relaxrFormTwinCol_body">
+				<h1>Contact Us</h1>
+
+				<form action="http://null.local/contactform.php" method="post" class="cd-form">
+					<fieldset>
+						<legend>Account Info</legend>
+						<input class="user" placeholder="First and Last" type="text" id="cd-name">
+						<label for="cd-name">Name</label>
+
+						<input class="company" placeholder="Company Name" type="text" id="cd-company">
+						<label for="cd-company">Company</label>
+						<input class="email" placeholder="Name@emailaddress.com" type="email" id="cd-email">
+						<label for="cd-email">Email</label> 	 					
+					</fieldset>
+						 	
+					<fieldset>
+						<legend>Project Info</legend>
+						<textarea class="message" placeholder="Enter your message here" type="text" id="cd-message"></textarea>
+						<label for="cd-message">Message</label>
+					</fieldset>
+
+					<input type="submit" value="Send Message">
+				</form>
+
+
+				<!-- 
+				
+
+#DONE Create the form with the classes cd-form and floating labels
+#DONE Create two fieldsets
+##DONE Account Info (name, email, etc)
+##DONE Project Info (the message field)
+#DONE Use the legend tag to title the fieldsets
+# DONE Each field should have a label
+# DONE Create a Submit Field with the text "Send Message"
+# Style Updates
+## DONE The submit button should have a background of #2c97de and on hover #42a2e1
+## The various inputs should have a border-radius of 0.25em and a border of #cfd9db
+## There are some existing classes in the CSS that apply icons to the inputs.  Find them and then add them to your form.	
+
+				-->
+
+			</div>
+			<aside class="relaxrFormTwinCol_sidebar">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet totam labore eaque sit praesentium explicabo blanditiis optio laboriosam ab id, deleniti, vel nam doloremque dolorum quia at assumenda perspiciatis.</p>
+			</aside>
+		</section>
+
+
+</body>
+</html>
