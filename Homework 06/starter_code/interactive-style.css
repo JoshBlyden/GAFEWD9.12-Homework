@@ -5,5 +5,5 @@
 }
 
 .trulia-featured-grid-item {
-
+grid template column span: 2;
 }
