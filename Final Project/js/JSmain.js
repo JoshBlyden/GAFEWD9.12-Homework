@@ -2,8 +2,8 @@
 
 
 // Selection of HTML objects
-const burger = document.querySelector('.burger i');
-const nav = document.querySelector('.navigation');
+const burger = document.querySelector('.hamburgerMenu i');
+const nav = document.querySelector('.linksAndCta');
 
 // Defining a function
 function toggleNav() {
@@ -15,6 +15,7 @@ function toggleNav() {
 // Calling the function after click event occurs
 burger.addEventListener('click', function() {
     toggleNav();
+    console.log("works");
 });
  
 

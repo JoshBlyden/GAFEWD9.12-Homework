@@ -63,7 +63,7 @@ nav li {
 
 
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .columns {
         display: grid;
         grid-template-columns: 1fr;
@@ -80,10 +80,6 @@ nav li {
         margin: 0;
     }
 
-    .linksAndCta {
-        display: none;
-    }
-
     .hamburgerMenu {
         display: block;
         margin: 32px;
@@ -93,6 +89,57 @@ nav li {
     .mainNav {
         display: flex;
         align-items: center;
+    }
+
+    .linksAndCta .topRightNav {
+    flex-direction: column;
+    margin:4rem 0 0 0;
+    gap:40px;
+    text-align:left;
+  }
+
+    .hamburgerMenu {
+        display: block;
+        margin-right: 30px;
+        color: black;
+    }
+
+    .linksAndCta {
+        right: 0;
+        margin: 0;
+        background: #343434;
+        position: absolute;
+        top: 70px;
+        width:0;
+        height:0;
+        flex-direction: column;
+        justify-content:normal;
+        gap: 40px;
+        overflow:hidden;
+        transition: all 400ms;
+    }
+
+    .linksAndCta a {
+        color: white;
+    }
+
+    .ctaMain {
+        background: white;
+    }
+
+    a.ctaMain {
+        color:#0a2d67;
+    }
+
+    a.ctaMain:hover {
+        color:white;
+    }
+
+
+
+    .nav_active {
+        width: 50%;
+        height: calc(100% - 70px);
     }
 }
 
@@ -105,3 +152,4 @@ nav li {
         font-size: 18px;
     }
 }
+
