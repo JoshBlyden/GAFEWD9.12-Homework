@@ -29,7 +29,7 @@ burger.addEventListener('click', function() {
 // Add click event to call functions
 
 // Selection of HTML objects
-let articleTrendingColumn = document.querySelector('#columnLeft');
+let articleTrendingColumn = document.querySelector('#columnLeftArticles');
 let articleNewestColumn = document.querySelector('#articleCardsColumnNewest');
 let articleToggleButtonRight = document.querySelector('#newest');
 let articleToggleButtonLeft = document.querySelector('#trending');
