@@ -82,3 +82,7 @@ articleToggleButtonLeft.addEventListener('click', toggleArticlesLeft);
 //
 
 // Calling the function after click event occurs
+
+
+const vinylColors = [(/images/Vinyl.png)]
+

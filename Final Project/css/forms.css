@@ -6,13 +6,27 @@ Form
 -------------------------------- */
 .sign-upForm {
     max-width: 960px;
-    margin: 0 48px;
+    margin: 0 40px;
+}
+
+.explainpop {
+    display:flex;
+    justify-content: center;
 }
 
 .mainBackgrnd {
-    background-image: url(../images/Formsbackground.jpg);
-    background-size: cover;
+background-color: grey;
 }
+
+
+.mainarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 48px;
+    max-height: 325px;
+}
+
 fieldset {
 	border: 0;
 	margin: 24px 0;
@@ -20,8 +34,7 @@ fieldset {
 }
 
 legend {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+
 }
 
 form div {
@@ -44,7 +57,7 @@ textarea,
 select,
 label {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 18px;
   color: #2b3e51;
 }
 
@@ -54,7 +67,7 @@ textarea,
 select,
 legend {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -75,6 +88,12 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: #2c97de;
+}
+
+.buttonarea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
 }
 
 textarea {
@@ -120,6 +139,47 @@ Custom icons
 
 
 .btnBox {
-display: flex;
-justify-content: center;
+display: grid;
+grid-template-columns: 1fr 1fr;;
+margin-top: 0;
+padding-top: 0;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign {
+    background: #317544;
+    padding: 64px;
+    margin: 32px;
+    color: white;
+    max-width: 300px;
+    max-height: 150px;
+    border-radius: 16px;
+    border: 8px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign h1 {
+    font-size: 56px;
+    font-family: 'Arial Narrow', sans-serif;
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    .sign p {
+        font-size: 24px;
+    }
+
+.popCount {
+    display: flex;
+    gap: 16px;
 }
