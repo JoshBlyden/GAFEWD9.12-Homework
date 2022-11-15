@@ -30,6 +30,11 @@ nav li {
     color: #0a2d67;
 }
 
+.topRightNav a:active {
+    text-decoration: underline;
+}
+
+
 .topRightNav ul {
     display: flex;
     gap: 8px;
