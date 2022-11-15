@@ -44,7 +44,11 @@ body {
 
 
 
-
+  #vinyl4 {
+    position: absolute;
+    bottom: 595px;
+    right: 875px;
+  }
 
 
 .heroTxt {
