@@ -1,3 +1,5 @@
+
+
 body {
     font-family: sans-serif;
 }
@@ -21,16 +23,16 @@ body {
 
 /* RECORD VINYL */
 
-.record {
-  min-width: 150px;
-  max-width: 150px;
+.recordSize {
+  min-width: 75px;
+  max-width: 75px;
 }
 
-.record {
+.recordClockwise {
     animation: spinme 8s infinite;
     animation-timing-function: linear;
   }
-  
+
   @keyframes spinme {
     0% {
       transform: rotate(0);
@@ -40,15 +42,75 @@ body {
     }
   }
 
+  .recordClockwise:hover {
+    animation: spinback 8s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes spinback {
+    100% {
+      transform: rotate(0);
+    }
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .recorddissapear {
+   display:none;
+  }
+
  
 
 
+/* VINYL IDS */
 
-  #vinyl4 {
+#vinyl1 {
     position: absolute;
-    bottom: 595px;
-    right: 875px;
+    bottom: 35%;
+    right: 12%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
   }
+
+  #vinyl2 {
+    position: absolute;
+    bottom: 75%;
+    right: 29%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+  }
+
+  #vinyl3 {
+    position: absolute;
+    bottom: 49%;
+    right: 39%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+  }
+
+   #vinyl4 {
+    position: absolute;
+    bottom: 75%;
+    right: 75%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+  }
+
+  #vinyl5 {
+    position: absolute;
+    bottom:39%;
+    right: 65%;
+    cursor: pointer;
+    transform: translate(calc(-50% + -70px), calc(-50% + -25px));
+    transition: 2s linear;
+  }
+
 
 
 .heroTxt {
@@ -56,6 +118,7 @@ body {
     padding: 24px;
     width: 600px;
     margin-left: 24px;
+    margin-right: 0;
 }
 
 .heroTxt h1 {
@@ -250,6 +313,29 @@ body {
     display: none;
 }
 
+
+/* ARTIST PAGE */ 
+
+.artistGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.artistCard a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+
+
+.artistCardPhoto {
+    background-color: #0e6096;
+    height:150px;
+    width:275px;
+}
+
+
 /* FOOTER */ 
 
 footer {
@@ -264,73 +350,5 @@ footer {
 
 
 
-/*  MEDIA */ 
 
-@media (min-width: 961px)
-{
-    .hamburgerMenu {
-        display: none;
-    }
-}
-
-
-
-@media (max-width: 960px) {
-    .columns {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .heroLander {
-        display: flex;
-        justify-content: center;
-        width: 100px;
-    }
-
-    .heroTxt {
-        text-align: center;
-        margin: 0;
-    }
-
-    .linksAndCta {
-        display: none;
-    }
-
-    .hamburgerMenu {
-        display: block;
-        margin: 32px;
-        color: black;
-    }
-
-    .mainNav {
-        display: flex;
-        align-items: center;
-    }
-
-    
-}
-
-@media (max-width: 600px) {
-    .heroTxt h1 {
-        font-size: 56px;
-    }
-
-    .heroTxt p {
-        font-size: 18px;
-    }
-
-    .featVid {
-        max-width: 343px;
-    }
-
-    .articleimgpreview {
-        width: 343px;
-        height: 274px;
-    }
-
-
-    .articleCard a, .articleCard h1, .articleCard p, .articleBtm, .articleCardsColumn, .articleCard {
-        width: 343px;
-    }
-}
 

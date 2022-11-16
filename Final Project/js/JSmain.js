@@ -86,3 +86,58 @@ articleToggleButtonLeft.addEventListener('click', toggleArticlesLeft);
 
 
 
+
+
+
+//Record dissapear
+
+//Record1
+let record1 = document.querySelector('#vinyl1')
+
+function recordPop1(){
+    record1.classList.add('recorddissapear')
+    console.log("record pop works")
+}
+
+record1.addEventListener('click', recordPop1);
+
+//Record2
+let record2 = document.querySelector('#vinyl2')
+
+function recordPop2(){
+    record2.classList.add('recorddissapear')
+    console.log("record pop works")
+}
+
+record2.addEventListener('click', recordPop2);
+
+//Record3
+let record3 = document.querySelector('#vinyl3')
+
+function recordPop3(){
+    record3.classList.add('recorddissapear')
+    console.log("record pop works")
+}
+
+record3.addEventListener('click', recordPop3);
+
+//Record4
+let record4 = document.querySelector('#vinyl4')
+
+function recordPop4(){
+    record4.classList.add('recorddissapear')
+    console.log("record pop works")
+}
+
+record4.addEventListener('click', recordPop4);
+
+//Record5
+
+let record5 = document.querySelector('#vinyl5')
+
+function recordPop5(){
+    record5.classList.add('recorddissapear')
+    console.log("record pop2 works")
+}
+
+record5.addEventListener('click', recordPop5);
