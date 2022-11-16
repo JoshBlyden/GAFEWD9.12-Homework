@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="stylesheet" href="../css/navigation.css"/>
   <link rel="stylesheet" href="../css/media.css"/>
+  <link rel="stylesheet" href="../css/poll.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700">
 
   <meta name="description" content="Botique record label and community for all things sad music; featuring singer/songerwriter & pop artists and lyricists."/>
@@ -53,7 +54,7 @@
 
     <main>
         <section class="heroLander">
-                <div class="container_fixed">
+                <div class="vinylsAll container_fixed">
                     <span id="vinyl1" class="recordClockwise"><img class="recordSize" src="../images/Vinyl.png" alt="image of vinyl record"/></span>
                     <span id="vinyl2" class="recordClockwise"><img class="recordSize" src="../images/Vinyl.png" alt="image of vinyl record"/></span>
                     <span id="vinyl3" class="recordClockwise"><img class="recordSize" src="../images/Vinyl.png" alt="image of vinyl record"/></span>
@@ -63,7 +64,7 @@
                 <div class="heroOuterSection container_fixed">
                     <div class="heroTxt">
                     <h1>sad music city</h1>
-                    <p>Subheader lorem ipsum lorem ipsum</p>
+                    <p>connecting artists and listeners, to be sad together.</p>
                     <a class="ctaMain HeroBtn" href="../html/signup.html">Join the City</a>
                     </div>
                 </div>
@@ -164,8 +165,8 @@
                         <div class="articleCard">
                             <a href="#"><img class="articleimgpreview" src="../images/GracieA.PNG" alt="Image Preview of Grammy Award"/></a>
                             <a href="#">
-                            <h1 class="articleHeaders"> Lorem Ipsum!</h1> 
-                            <p>Lorem Impsum.</p>
+                            <h1 class="articleHeaders">From bedroom demos to opening for Taylor Swift next spring</h1> 
+                            <p>Who is Gracie Abrams...</p>
                             </a>
                             <div class ="articleBtm">
                                 <p class="readtime">5 min read</p>
@@ -181,8 +182,8 @@
                         <div class="articleCard">
                             <a href="#"><img class="articleimgpreview" src="../images/jpsa.PNG" alt="Image Preview of Grammy Award"/></a>
                             <a href="#">
-                            <h1 class="articleHeaders"> Lorem Ipsum!</h1> 
-                            <p>Lorem Impsum.</p>
+                            <h1 class="articleHeaders">Lyrical Digest with JP Saxe</h1> 
+                            <p>Heartbreak from his perspective...</p>
                             </a>
                             <div class ="articleBtm">
                                 <p class="readtime">5 min read</p>
@@ -199,8 +200,8 @@
                         <div class="articleCard">
                             <a href="#"><img class="articleimgpreview" src="../images/NoahK.PNG" alt="Image Preview of Grammy Award"/></a>
                             <a href="#">
-                            <h1 class="articleHeaders"> Lorem Ipsum!</h1> 
-                            <p>Lorem Impsum.</p>
+                            <h1 class="articleHeaders">Noah Kahan on his latest success</h1> 
+                            <p>Does tiktok virality add legitamcy or cheapen a song...</p>
                             </a>
                             <div class ="articleBtm">
                                 <p class="readtime">5 min read</p>
@@ -217,8 +218,8 @@
                         <div class="articleCard">
                             <a href="#"><img class="articleimgpreview" src="../images/TaylorS.PNG" alt="Image Preview of Grammy Award"/></a>
                             <a href="#">
-                            <h1 class="articleHeaders"> Lorem Ipsum!</h1> 
-                            <p>Lorem Impsum.</p>
+                            <h1 class="articleHeaders">Sad music has taken over the Billboard top 10</h1> 
+                            <p>How Taylor keeps validating sad music and lyricism</p>
                             </a>
                             <div class ="articleBtm">
                                 <p class="readtime">5 min read</p>
@@ -242,8 +243,28 @@
                         <h1>Featured Artist</h1>
                     </header>
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cyvtw_zpq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <div class="artistFeature"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cyvtw_zpq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="featuredBtmRow">
+                            <h1>Julia Wolf</h1>
+                            <div class="viewMore">
+                                <a href="#">
+                                    <p>View feature</p>
+                                    <img src="../images/arrowRight.svg" alt="Right Arrow" width="24px" class="arrowIcon"/>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
                 
+                   <div class="voting">
+                        <h2>Up Next</h2>
+                        <div class="pollArea">
+                            <div class="poll">
+                                <div class="question"></div>
+                                <div class="answers"></div>
+                            </div>
+                        </div>
+                    </div>
                 </section> <!---CLOSING right side column -->
 
 
@@ -256,14 +277,26 @@
 
 
     <script src= "../js/JSmain.js"></script>
+    <script src= "../js/poll.js"></script>
 </body>
 
 
 
 
-<footer>
-
-    <h1> This is the footer</h1>
+<footer class="smcFooter">
+    <ul class="footerLinks">
+        <li><a href="#">home</a></li>
+        <li><a href="#">artists</a></li>
+        <li><a href="#">toptearmusic</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">privacy terms of use</a></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">contributers</a></li>
+        <li><a href="#">studio</a></li>
+        <li><a href="#">help</a></li>
+    </ul>
+    <p class="copyright">Copyright © 2022 Sad Music City, All rights reserved.</p>
 </footer>
 
 </html>
