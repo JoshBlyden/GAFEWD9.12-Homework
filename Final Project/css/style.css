@@ -20,6 +20,9 @@ body {
     padding: 128px 0;
 }
 
+iframe {
+    border-radius: 12px;
+}
 
 /* RECORD VINYL */
 
